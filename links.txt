@@ -1,0 +1,6 @@
+// list of <tools, packages and links> installed for this application.
+
+- nginx
+- php-fpm: https://www.pcsuggest.com/setup-nginx-with-php/
+- mysql
+- mysqli

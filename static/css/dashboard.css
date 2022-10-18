@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #F8F8F8;
+    display: flex;
+
+}
+
+.container {
+    box-shadow: 4px 6px 15px lightgrey;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    padding: 1% 2%;
+    border-radius: 2%;
+    background-color: white;
+}
+
+.upperdiv {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 10%;
+    padding: 5px 0px;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 3%;
+}
+
+.upperdiv button{
+    padding: 5px 20px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    box-shadow: 5px 8px 6px lightblue;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6%;
+}
+
+.upperdiv button:hover{
+    padding: 5px 25px;
+}
+
+.bodydiv{
+    display: grid;
+    grid-template-columns: 20% 25% 45%;
+    gap: 5%;
+    height: calc(100% - 15%)
+}
+
+.bodydiv1{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    gap: 5%;
+    height: calc(100% - 15%)
+}
+
+.profilesidebar{
+    height: 70%;
+    padding: 0.9rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profilesidebar img{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.error-message-container{
+    width: 60%;
+    margin: 0 auto;
+    background-color: red;
+    padding: 0.6rem;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+.profilesidebar button{
+    padding: 5px 20px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.tasksidebar{
+    padding: 20px;
+}
+
+.form-container{
+    width: 100%;
+}
+
+.form-container input, textarea{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-container textarea{
+    height: 5rem;
+}
+
+.form-container input:focus{
+    outline: none;
+    border-bottom: 1px solid red;
+}
+
+.form-container button{
+    width: 100%;
+    padding: 0.8rem;
+    background-color:inherit;
+    color: teal;
+    border: 2.2px solid green;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 2px 3px 5px #dddddd;
+  }
+
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .delete-button{
+    padding: 0.1rem 0.7rem;
+    background-color:inherit;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+.delete-button:hover{
+    border: 1px solid red;
+}
+
+.tablecontainer{
+    overflow:auto;
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+    body{
+        height: 100%;
+        width: 100%;
+        background-color: #F8F8F8;
+        display: block;
+        overflow: auto;
+    }
+
+    .bodydiv{
+        display: block;
+    }
+
+    .bodydiv1{
+        display: block;
+    }
+
+    .profilesidebar{
+        height: 24rem;
+        padding: 0.9rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow:none;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        padding: 1% 2%;
+    }
+
+    .bodydiv section{
+        margin-top: 2rem;
+    }
+}
